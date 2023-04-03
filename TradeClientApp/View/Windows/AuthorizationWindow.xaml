@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TradeClientApp.View.Windows"
+        xmlns:ViewModel="clr-namespace:TradeClientApp.ViewModel" x:Class="TradeClientApp.View.Windows.AuthorizationWindow"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="Trade: Авторизация" MinHeight="400" MinWidth="400"
+        Width="450" Height="500">
+    <Window.DataContext>
+        <ViewModel:AuthorizationViewModel/>
+    </Window.DataContext>
+    <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Trade: Авторизация" HorizontalAlignment="Center" FontSize="25"/>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <TextBlock Text="Введите логин:"/>
+            <TextBox Text="{Binding Login}"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="10">
+            <TextBlock Text="Введите пароль:"/>
+            <PasswordBox x:Name="password"/>
+        </StackPanel>
+
+        <Button Grid.Row="3" Height="30" Width="100" HorizontalAlignment="Right" Margin="10" x:Name="btnSignIn" Click="btnSignIn_Click"
+                Content="{Binding ButtonSignIn}"/>
+    </Grid>
+</Window>
