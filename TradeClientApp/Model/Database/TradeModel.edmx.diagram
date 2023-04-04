@@ -4,12 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8057db5996ab482d80dce22f432267fd" Name="Diagram1">
-        <EntityTypeShape EntityType="TradeDBModel.Order" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="TradeDBModel.Product" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="TradeDBModel.Role" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="TradeDBModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="TradeDBModel.FK__User__UserRole__267ABA7A" ManuallyRouted="false" />
+      <Diagram DiagramId="41246df9f132420ab7cdb86e66d7b4cc" Name="Diagram1">
+        <EntityTypeShape EntityType="TradeDBModel.Category" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.City" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Manufacter" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Order" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.PickupPoint" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Product" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Role" Width="1.5" PointX="7.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Status" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.User" Width="1.5" PointX="10" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="TradeDBModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_PickupPoint_City" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Product_Manufacter" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Order_PickupPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__User__UserRole__2E1BDC42" ManuallyRouted="false" />
         <AssociationConnector Association="TradeDBModel.OrderProduct" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

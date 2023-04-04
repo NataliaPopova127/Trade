@@ -29,12 +29,21 @@ namespace TradeClientApp.View.Windows
         private async void btnSignIn_Click(object sender, RoutedEventArgs e)
         {
             (DataContext as AuthorizationViewModel).Password = password.Password;
-           
 
-            if (await (DataContext as AuthorizationViewModel).ValidateUserLoginAndPassword())
+            var user = await (DataContext as AuthorizationViewModel).ValidateUserLoginAndPassword();
+            if (user == 1)
             {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
+                new AdminWindow().Show();
+                this.Hide();
+            }
+            else if (user == 2)
+            {
+                new ManagerWindow().Show();
+                this.Hide();
+            }
+            else if (user == 3)
+            {
+                new ClientWindow().Show();
                 this.Hide();
             }
             else

@@ -14,14 +14,14 @@ namespace TradeClientApp.Model.Database
     
     public partial class User
     {
-        public int UserID { get; set; }
-        public string UserSurname { get; set; }
-        public string UserName { get; set; }
-        public string UserPatronymic { get; set; }
-        public string UserLogin { get; set; }
-        public string UserPassword { get; set; }
-        public int UserRole { get; set; }
+        public int Id { get; set; }
+        public string Surname { get; set; }
+        public string Name { get; set; }
+        public string Patronymic { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public int Role { get; set; }
     
-        public virtual Role Role { get; set; }
+        public virtual Role Role1 { get; set; }
     }
 }

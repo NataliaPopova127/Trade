@@ -44,21 +44,21 @@ namespace TradeClientApp.ViewModel
             }
         }
 
-        public async Task<bool> ValidateUserLoginAndPassword()
+        public async Task<int> ValidateUserLoginAndPassword()
         {
             try
             {
                 
                 ButtonSignIn = "Подождите...";
-                using (var context = new TradeDBEntities())
+                using (TradeDBEntities context = new TradeDBEntities())
                 {
-                    var user = await context.User.FirstOrDefaultAsync(u => u.UserLogin == _login && u.UserPassword == _password);
+                    var user = await context.User.FirstOrDefaultAsync(u => u.Login == _login && u.Password == _password);
 
                     if (user != null)
-                        return true;
+                        return user.Role;
                     else
                     {
-                        return false;
+                        return -1;
                     }
                            
                 }
@@ -67,7 +67,7 @@ namespace TradeClientApp.ViewModel
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Ошибка соединения с базой данных", MessageBoxButton.OK, MessageBoxImage.Stop);
-                return false;
+                return -1;
             }
             finally
             {

@@ -24,3 +24,9 @@ D:\IS-33\TradeClientApp\obj\Debug\TradeClientApp.csproj.CopyComplete
 D:\IS-33\TradeClientApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\MainWindow.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\MainWindow.baml
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\AdminWindow.g.cs
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ClientWindow.g.cs
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ManagerWindow.g.cs
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\AdminWindow.baml
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ClientWindow.baml
+D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ManagerWindow.baml

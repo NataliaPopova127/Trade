@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
-        Title="Trade: Авторизация" MinHeight="400" MinWidth="400"
+        Title="ООО Стройматериалы: Авторизация" MinHeight="400" MinWidth="400"
         Width="450" Height="500">
     <Window.DataContext>
         <ViewModel:AuthorizationViewModel/>

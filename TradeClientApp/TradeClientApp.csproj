@@ -65,13 +65,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Database\Category.cs">
+      <DependentUpon>TradeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\City.cs">
+      <DependentUpon>TradeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Manufacter.cs">
+      <DependentUpon>TradeModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Database\Order.cs">
+      <DependentUpon>TradeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\PickupPoint.cs">
       <DependentUpon>TradeModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\Product.cs">
       <DependentUpon>TradeModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\Role.cs">
+      <DependentUpon>TradeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Status.cs">
       <DependentUpon>TradeModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\TradeModel.Context.cs">
@@ -94,6 +109,10 @@
     </Compile>
     <Compile Include="ViewModel\AuthorizationViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\ClientViewModel.cs" />
+    <Compile Include="View\Windows\AdminWindow.xaml.cs">
+      <DependentUpon>AdminWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Windows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -101,14 +120,32 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\Windows\ClientWindow.xaml.cs">
+      <DependentUpon>ClientWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Windows\ManagerWindow.xaml.cs">
+      <DependentUpon>ManagerWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\Windows\AdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\AuthorizationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Windows\ClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\ManagerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,19 +185,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model\Database\TradeModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TradeModel.Context.cs</LastGenOutput>
       <DependentUpon>TradeModel.edmx</DependentUpon>
+      <LastGenOutput>TradeModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model\Database\TradeModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TradeModel.edmx</DependentUpon>
       <LastGenOutput>TradeModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

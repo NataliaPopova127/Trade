@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\IS-33\TradeClientApp\App.xaml
-2-1729701150
+5-811523907
 2166957333
-151094040005
+24-632925270
 19-2120872208
-View\Windows\AuthorizationWindow.xaml;View\Windows\MainWindow.xaml;
+View\Windows\AdminWindow.xaml;View\Windows\AuthorizationWindow.xaml;View\Windows\ClientWindow.xaml;View\Windows\MainWindow.xaml;View\Windows\ManagerWindow.xaml;
 
 False
 

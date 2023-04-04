@@ -20,11 +20,13 @@ namespace TradeClientApp.Model.Database
             this.Product = new HashSet<Product>();
         }
     
-        public int OrderID { get; set; }
-        public string OrderStatus { get; set; }
-        public System.DateTime OrderDeliveryDate { get; set; }
-        public string OrderPickupPoint { get; set; }
+        public int Id { get; set; }
+        public int Status { get; set; }
+        public System.DateTime DeliveryDate { get; set; }
+        public int PickupPointId { get; set; }
     
+        public virtual PickupPoint PickupPoint { get; set; }
+        public virtual Status Status1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Product { get; set; }
     }
