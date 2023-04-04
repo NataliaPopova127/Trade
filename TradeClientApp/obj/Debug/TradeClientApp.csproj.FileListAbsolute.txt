@@ -22,11 +22,11 @@ D:\IS-33\TradeClientApp\bin\Debug\ru\EntityFramework.resources.dll
 D:\IS-33\TradeClientApp\obj\Debug\TradeClientApp_Content.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\TradeClientApp.csproj.CopyComplete
 D:\IS-33\TradeClientApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\IS-33\TradeClientApp\obj\Debug\View\Windows\MainWindow.g.cs
-D:\IS-33\TradeClientApp\obj\Debug\View\Windows\MainWindow.baml
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\AdminWindow.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ClientWindow.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ManagerWindow.g.cs
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\AdminWindow.baml
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ClientWindow.baml
 D:\IS-33\TradeClientApp\obj\Debug\View\Windows\ManagerWindow.baml
+D:\IS-33\TradeClientApp\obj\Debug\Assets\Dictionaries\StyleDictionary.baml
+D:\IS-33\TradeClientApp\obj\Debug\App.baml

@@ -9,7 +9,8 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
         Title="ООО Стройматериалы: Авторизация" MinHeight="400" MinWidth="400"
-        Width="450" Height="500">
+        Width="450" Height="500"
+     Icon="/Assets/Images/icon.ico">
     <Window.DataContext>
         <ViewModel:AuthorizationViewModel/>
     </Window.DataContext>
@@ -20,7 +21,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Label Content="Trade: Авторизация" HorizontalAlignment="Center" FontSize="25"/>
+        <Image Source="/Assets/Images/logo.png" Width="50" HorizontalAlignment="Left" Grid.Row="0"/>
+        <Label Content="Trade: Авторизация" HorizontalAlignment="Center" FontSize="25" 
+               Grid.Row="0" Margin="50 0 0 0" FontWeight="DemiBold"/>
 
         <StackPanel Grid.Row="1" Margin="10">
             <TextBlock Text="Введите логин:"/>
